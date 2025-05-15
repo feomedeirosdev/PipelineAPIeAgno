@@ -11,13 +11,14 @@ GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 
 # Initialize PostgresTools with connection details
 postgres_tools = PostgresTools(
-    host="dpg-d0iggcbe5dus73dt0jhg-a.ohio-postgres.render.com",
-    port=5532,
-    db_name="dbname_4ocy",
-    user="dbname_4ocy_user",
-    password="pOSe9EZpXT402mHTMha0jsQYMhHi1i5K",
-    table_schema="public",
+    host=os.getenv("POSTGRES_HOST"),
+    port=int(os.getenv("POSTGRES_PORT")),
+    db_name=os.getenv("POSTGRES_DB"),
+    user=os.getenv("POSTGRES_USER"),
+    password=os.getenv("POSTGRES_PASSWORD"),
+    table_schema="public"
 )
+
 
 # Create an agent with the PostgresTools
 agent = Agent(tools=[postgres_tools],
