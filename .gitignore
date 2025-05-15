@@ -1,1 +1,47 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# VSCode settings
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
 .env
+*.env
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy cache
+.mypy_cache/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output folders
+dist/
+build/
+*.egg-info/
+
+# Parquet or data files
+*.parquet
+*.csv
+*.json
+
+# Database files
+*.sqlite3
+*.db
