@@ -45,3 +45,31 @@ build/
 # Database files
 *.sqlite3
 *.db
+
+# Arquivos do Microsoft Office
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.mdb
+*.accdb
+
+# Arquivos do LibreOffice / OpenOffice
+*.odt
+*.ods
+*.odp
+*.odb
+*.odg
+*.odf
+
+# Temporários do Office
+~$*
+
+# Outros documentos que não costumam ser versionados
+*.pdf
+*.rtf
+*.log
+*.tmp
+*.bak
